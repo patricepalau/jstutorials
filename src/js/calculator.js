@@ -1,6 +1,6 @@
 var myModules = myModules || {};
 
-myModules.Calculator = function () {
+myModules.Calculator = (function () {
   var PI = 3.14;
 
   function Calculator() {
@@ -19,5 +19,5 @@ myModules.Calculator = function () {
   };
 
   return Calculator;
-}()
+}());
 
