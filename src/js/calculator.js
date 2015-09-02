@@ -1,17 +1,23 @@
-var PI = 3.14;
+var myModules = myModules || {};
 
-function Calculator() {
-};
+myModules.Calculator = function () {
+  var PI = 3.14;
 
-Calculator.prototype.add = function (x, y) {
-  return x + y;
-};
+  function Calculator() {
+  };
 
-Calculator.prototype.mutiply = function (x, y) {
-  return x * y;
-};
+  Calculator.prototype.add = function (x, y) {
+    return x + y;
+  };
 
-Calculator.prototype.calculateCircleArea = function (r) {
-  return PI * r * r;
-};
+  Calculator.prototype.mutiply = function (x, y) {
+    return x * y;
+  };
+
+  Calculator.prototype.calculateCircleArea = function (r) {
+    return PI * r * r;
+  };
+
+  return Calculator;
+}()
 
